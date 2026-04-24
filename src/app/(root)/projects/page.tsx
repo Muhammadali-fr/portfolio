@@ -1,28 +1,26 @@
 
 // array 
+import Projects from "@/src/components/Projects";
 import { projects } from "@/src/data/projects";
-import ProjectImage from "./components/ImagePreview";
+import { MoveRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Products() {
 
-
-
     return (
-        <section className="c-width grid grid-cols-2 py-3 gap-3">
-
-
-            {projects.map((project, i) => (
-                <div key={i} className="w-full h-[400px] rounded-3xl border c-border-color c-gray">
-                    <ProjectImage project={project} />
-                    <div className="m-3">
-                        <ul className="text-sm flex gap-1">
-                            <li className="p-1 bg-[#577399] text-white inline rounded-lg">Front-end</li>
-                        </ul>
-                        <p className="text-2xl font-semibold">Delizi</p>
-                    </div>
+        <div className="bg-white py-5">
+            <div className="c-width space-y-5">
+                <p className="text-[38px] font-semibold">Projects</p>
+                <Projects projects={projects} color={"#f5f5f5"} />
+                <div className="w-full flex items-center justify-center mt-10">
+                    <Link href={"/skills"}>
+                        <button className="flex gap-2 px-5 py-2 c-blue text-white rounded-3xl cursor-pointer group">
+                            Skills
+                            <MoveRight className="transition-all text-gray-300 group-hover:translate-x-1" />
+                        </button>
+                    </Link>
                 </div>
-            ))}
-
-        </section>
+            </div>
+        </div>
     );
 };

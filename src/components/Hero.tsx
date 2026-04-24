@@ -1,9 +1,10 @@
 // components
+import { CloudDownload } from "lucide-react";
 import TeammateImages from "./TeammateImages";
 
 export default function Hero() {
     return (
-        <section className="c-width py-16 space-y-6 text-center">
+        <section className="c-width py-15 space-y-5 text-center">
             <TeammateImages />
 
             <div className="flex flex-col items-center justify-center space-y-2">
@@ -20,7 +21,12 @@ export default function Hero() {
                 </p>
 
                 <div className="flex items-center gap-5 my-5">
-                    <button className="px-5 py-2 c-blue text-white rounded-3xl cursor-pointer">View Porjects</button>
+                    <a download="Jamolov-Muhammadali-CV.pdf" href="/download/JamolovMuhammadaliCV.pdf">
+                        <button className="flex gap-2 px-5 py-2 c-blue text-white rounded-3xl cursor-pointer">
+                            <CloudDownload />
+                            Download CV
+                        </button>
+                    </a>
                     <button className="px-5 py-2 c-white rounded-3xl border border-[#0071e3] text-[#0071e3] hover:bg-[#0071e3] hover:text-white cursor-pointer">Contact me</button>
                 </div>
             </div>

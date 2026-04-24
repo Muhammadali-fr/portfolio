@@ -1,29 +1,24 @@
 
 // next 
 import Image from "next/image";
-import Link from "next/link";
 
 // assets 
 import myLogoImage from "@/public/assets/my-image-logo.webp";
-import shukurulloLogoImage from '@/public/assets/shukurullo-logo.webp';
-import mardonbekLogoImage from '@/public/assets/mardonbek-logo.webp';
+import my3x4Image from '@/public/assets/my3x4.webp';
+import myGalssesImage from '@/public/assets/myGlassesImage.webp';
 
 export default function TeammateImages() {
     return (
-        <ul className="flex items-center justify-center">
-            <li title="Hamidov Mardonbek">
-                <Link href={"/"}>
-                    <Image width={55} height={55} className="rounded-full object-cover object-center relative left-3" src={mardonbekLogoImage} alt="Mardonbek Khamidov" />
-                </Link>
+        <ul title="me: Jamolov Muhammadali" className="flex items-center justify-center group">
+            <li className="transition-all duration-300 group-hover:-translate-x-2">
+                <Image width={55} height={55} className="w-13 h-13 rounded-full object-cover object-center relative left-3" src={myGalssesImage} alt="Jamolov Muhammadali" />
             </li>
-            <li title="me: Jamolov Muhammadali" className="z-2">
-                <Image width={65} height={65} className="rounded-full object-cover object-center" src={myLogoImage} alt="Jamolov Muhammadali" />
+            <li className="z-2">
+                <Image width={65} height={65} className="rounded-full border border-white object-cover object-center" src={myLogoImage} alt="Jamolov Muhammadali" />
             </li>
 
-            <li title="Boburov Shukurullo">
-                <Link target="_blank" href={"https://boburov.uz/"}>
-                    <Image width={55} height={55} className="rounded-full object-cover object-center relative right-3" src={shukurulloLogoImage} alt="Boburov Shukurullo" />
-                </Link>
+            <li className="transition-all duration-300 group-hover:translate-x-2">
+                <Image width={55} height={55} className="w-13 h-13 rounded-full object-cover object-top relative right-3" src={my3x4Image} alt="Jamolov Muhammadali" />
             </li>
         </ul>
     );
