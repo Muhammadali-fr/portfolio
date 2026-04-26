@@ -30,7 +30,7 @@ export default function StackedImages() {
       </div>
 
       {/* Right Card */}
-      <div className="absolute right-[18%] rotate-14 z-20 transition hover:-translate-y-2 duration-300  group-hover:translate-x-2 ">
+      <div className="absolute right-[18%] rotate-14 z-20 transition duration-300  group-hover:translate-x-2 ">
         <Image
           src={userPfp}
           alt="Muhammadali glasses"
