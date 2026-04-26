@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
-import Background from "../components/ui/Background";
+import { ModalProvider } from "../context/ModalContext";
 
-const inter = Inter({
-  variable: "--font-inter",
+const geist = Geist({
   subsets: ["latin"],
+  variable: "--font-geist",
   display: "swap",
 });
 
@@ -24,18 +24,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={geist.className}>
       <head>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
       </head>
-      <body
-        className={`${inter.variable} antialiased bg-white text-gray-900`}
-      >
-        {/* <Background /> */}
-        {children}
+
+      <body className="antialiased bg-white text-gray-900">
+        <ModalProvider>{children}</ModalProvider>
       </body>
     </html>
   );

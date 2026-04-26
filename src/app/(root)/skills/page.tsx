@@ -93,7 +93,7 @@ export default function Skills() {
                 </ul>
             </div>
             <div className="w-full flex items-center justify-center">
-                <Link href={"/contact"}>
+                <Link href={"/"}>
                     <button className="flex gap-2 px-5 py-2 c-blue text-white rounded-3xl cursor-pointer group">
                         Contact me
                         <MoveRight className="transition-all text-gray-300 group-hover:translate-x-1" />

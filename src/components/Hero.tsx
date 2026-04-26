@@ -1,6 +1,7 @@
 // components
 import { CloudDownload } from "lucide-react";
 import TeammateImages from "./TeammateImages";
+import ContactMeButton from "../app/(root)/components/ContactMeButton";
 
 export default function Hero() {
     return (
@@ -27,7 +28,7 @@ export default function Hero() {
                             Download CV
                         </button>
                     </a>
-                    <button className="px-5 py-2 c-white rounded-3xl border border-[#0071e3] text-[#0071e3] hover:bg-[#0071e3] hover:text-white cursor-pointer">Contact me</button>
+                    <ContactMeButton />
                 </div>
             </div>
         </section>
