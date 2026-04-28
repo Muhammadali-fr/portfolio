@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function Skills() {
     return (
-        <section className="flex-1 flex flex-col items-center justify-between py-10">
+        <section className="flex-1 flex flex-col items-center justify-between py-5">
             <div className="c-width space-y-5">
                 <p className="text-[38px] font-semibold">Skills</p>
 
-                <ul className="grid grid-cols-5 gap-5">
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
                     <li className="bg-[#F5F5F5] flex flex-col items-center justify-center gap-2 py-5 rounded-3xl ">
                         <Image width={100} height={80} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML image" />
                         <p className="font-bold">HTML</p>
