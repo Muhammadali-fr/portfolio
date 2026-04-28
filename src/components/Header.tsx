@@ -25,9 +25,9 @@ export default function Header() {
 
     return (
         <>
-            <header className="w-full border-b c-border-color bg-[#f5f5f5]/80 sticky top-0 backdrop-blur-md z-98">
+            <header className="w-full bg-white/90 sticky top-0 backdrop-blur-md z-98">
                 <div className="c-width flex items-center justify-between ">
-                    <Link href={"/"}><p className="text-[20px] font-medium">Muhammadali</p></Link>
+                    <Link href={"/"}><p className="text-[20px] font-medium">m</p></Link>
                     <ul className="hidden sm:flex items-center justify-center gap-5 text-[15px]">
                         <li className={`py-3 ${isActive("/") && "border-b border-black "}`}><Link href={"/"}>Home</Link></li>
                         <li className={`py-3 ${isActive("/about") && "border-b border-black "}`}><Link href={"/about"}>About</Link></li>

@@ -18,7 +18,7 @@ export default function Modal() {
     if (!isOpen) return null;
 
     return (
-        <div className="transition-all bg-black/20 duration-300 fixed inset-0 backdrop-blur-xs flex items-center justify-center z-10">
+        <div className="transition-all bg-black/20 duration-300 fixed inset-0 backdrop-blur-xs flex items-center justify-center z-101">
             <div className="w-[400px] bg-white rounded-3xl overflow-hidden">
                 <div className="w-full  bg-[#F5F5F5] flex items-center justify-between p-3">
                     <p></p>
