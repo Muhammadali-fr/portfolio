@@ -4,7 +4,7 @@ import { MoveRight } from "lucide-react";
 
 export default function About() {
     return (
-        <section className="flex-1 flex flex-col items-center justify-between py-10heade">
+        <section className="flex-1 flex flex-col items-center justify-between py-5">
             <div className="c-width space-y-5 py-5 text-[17px]">
                 <StackedImages />
                 <p className="text-[38px] font-semibold">About me</p>
